@@ -1,0 +1,356 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'GuiT7.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1151, 935)
+        MainWindow.setLayoutDirection(QtCore.Qt.LeftToRight)
+        MainWindow.setStyleSheet("color: rgb(170, 85, 0);\n"
+"background-color: rgb(30, 163, 200);\n"
+"background-image: url(\"E:/Year3 Term1/Image processing/Task2-ZOOM/canvas.png\");")
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
+        self.tabWidget.setGeometry(QtCore.QRect(-10, 0, 1191, 931))
+        self.tabWidget.setStyleSheet("border-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));\n"
+"color: rgb(0, 0, 0);\n"
+"gridline-color: rgb(255, 170, 255);\n"
+"")
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab_3 = QtWidgets.QWidget()
+        self.tab_3.setObjectName("tab_3")
+        self.Image = QtWidgets.QLabel(self.tab_3)
+        self.Image.setGeometry(QtCore.QRect(20, 70, 531, 511))
+        self.Image.setText("")
+        self.Image.setAlignment(QtCore.Qt.AlignCenter)
+        self.Image.setObjectName("Image")
+        self.Browse = QtWidgets.QPushButton(self.tab_3)
+        self.Browse.setGeometry(QtCore.QRect(70, 690, 271, 51))
+        self.Browse.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.Browse.setObjectName("Browse")
+        self.ZoomFactor = QtWidgets.QLineEdit(self.tab_3)
+        self.ZoomFactor.setGeometry(QtCore.QRect(30, 760, 361, 41))
+        self.ZoomFactor.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.ZoomFactor.setObjectName("ZoomFactor")
+        self.KNNBtn = QtWidgets.QPushButton(self.tab_3)
+        self.KNNBtn.setGeometry(QtCore.QRect(410, 760, 171, 41))
+        self.KNNBtn.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.KNNBtn.setObjectName("KNNBtn")
+        self.BilinearBtn = QtWidgets.QPushButton(self.tab_3)
+        self.BilinearBtn.setGeometry(QtCore.QRect(590, 760, 171, 41))
+        self.BilinearBtn.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.BilinearBtn.setObjectName("BilinearBtn")
+        self.EqualizeHBtn = QtWidgets.QPushButton(self.tab_3)
+        self.EqualizeHBtn.setGeometry(QtCore.QRect(590, 700, 171, 41))
+        self.EqualizeHBtn.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.EqualizeHBtn.setObjectName("EqualizeHBtn")
+        self.Image_Enahnced = QtWidgets.QLabel(self.tab_3)
+        self.Image_Enahnced.setGeometry(QtCore.QRect(580, 70, 531, 511))
+        self.Image_Enahnced.setText("")
+        self.Image_Enahnced.setAlignment(QtCore.Qt.AlignCenter)
+        self.Image_Enahnced.setObjectName("Image_Enahnced")
+        self.ZoomFactor_6 = QtWidgets.QLineEdit(self.tab_3)
+        self.ZoomFactor_6.setGeometry(QtCore.QRect(740, 20, 201, 31))
+        self.ZoomFactor_6.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.ZoomFactor_6.setObjectName("ZoomFactor_6")
+        self.ZoomFactor_7 = QtWidgets.QLineEdit(self.tab_3)
+        self.ZoomFactor_7.setGeometry(QtCore.QRect(170, 20, 201, 31))
+        self.ZoomFactor_7.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.ZoomFactor_7.setObjectName("ZoomFactor_7")
+        self.KernelSize = QtWidgets.QLineEdit(self.tab_3)
+        self.KernelSize.setGeometry(QtCore.QRect(610, 620, 181, 41))
+        self.KernelSize.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.KernelSize.setObjectName("KernelSize")
+        self.FactorValue = QtWidgets.QLineEdit(self.tab_3)
+        self.FactorValue.setGeometry(QtCore.QRect(810, 620, 181, 41))
+        self.FactorValue.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.FactorValue.setObjectName("FactorValue")
+        self.Enhance_BTN = QtWidgets.QPushButton(self.tab_3)
+        self.Enhance_BTN.setGeometry(QtCore.QRect(410, 700, 171, 41))
+        self.Enhance_BTN.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.Enhance_BTN.setObjectName("Enhance_BTN")
+        self.Fourier = QtWidgets.QPushButton(self.tab_3)
+        self.Fourier.setGeometry(QtCore.QRect(370, 620, 201, 41))
+        self.Fourier.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.Fourier.setObjectName("Fourier")
+        self.Fourier_FilterBTN = QtWidgets.QPushButton(self.tab_3)
+        self.Fourier_FilterBTN.setGeometry(QtCore.QRect(810, 700, 201, 41))
+        self.Fourier_FilterBTN.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.Fourier_FilterBTN.setObjectName("Fourier_FilterBTN")
+        self.tabWidget.addTab(self.tab_3, "")
+        self.tab_2 = QtWidgets.QWidget()
+        self.tab_2.setObjectName("tab_2")
+        self.Tab2Label = QtWidgets.QLabel(self.tab_2)
+        self.Tab2Label.setGeometry(QtCore.QRect(40, 0, 721, 521))
+        self.Tab2Label.setStyleSheet("border-color: rgb(0, 255, 255);")
+        self.Tab2Label.setText("")
+        self.Tab2Label.setObjectName("Tab2Label")
+        self.splitter = QtWidgets.QSplitter(self.tab_2)
+        self.splitter.setGeometry(QtCore.QRect(820, -10, 221, 131))
+        self.splitter.setOrientation(QtCore.Qt.Vertical)
+        self.splitter.setObjectName("splitter")
+        self.GenerateBtn = QtWidgets.QPushButton(self.splitter)
+        self.GenerateBtn.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(170, 255, 255);")
+        self.GenerateBtn.setObjectName("GenerateBtn")
+        self.ShowPixels = QtWidgets.QPushButton(self.splitter)
+        self.ShowPixels.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(170, 255, 255);")
+        self.ShowPixels.setObjectName("ShowPixels")
+        self.Info = QtWidgets.QLabel(self.tab_2)
+        self.Info.setGeometry(QtCore.QRect(800, 140, 291, 681))
+        self.Info.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 0, 0);")
+        self.Info.setText("")
+        self.Info.setObjectName("Info")
+        self.tabWidget.addTab(self.tab_2, "")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.ZoomLabel = QtWidgets.QLabel(self.tab)
+        self.ZoomLabel.setGeometry(QtCore.QRect(30, 30, 1031, 781))
+        self.ZoomLabel.setText("")
+        self.ZoomLabel.setObjectName("ZoomLabel")
+        self.tabWidget.addTab(self.tab, "")
+        self.tab_4 = QtWidgets.QWidget()
+        self.tab_4.setObjectName("tab_4")
+        self.NormalizedH = QtWidgets.QLabel(self.tab_4)
+        self.NormalizedH.setGeometry(QtCore.QRect(30, 510, 511, 351))
+        self.NormalizedH.setText("")
+        self.NormalizedH.setObjectName("NormalizedH")
+        self.EqualizedImage = QtWidgets.QLabel(self.tab_4)
+        self.EqualizedImage.setGeometry(QtCore.QRect(180, 30, 791, 421))
+        self.EqualizedImage.setText("")
+        self.EqualizedImage.setObjectName("EqualizedImage")
+        self.EqaulizedH_N = QtWidgets.QLabel(self.tab_4)
+        self.EqaulizedH_N.setGeometry(QtCore.QRect(580, 510, 511, 341))
+        self.EqaulizedH_N.setText("")
+        self.EqaulizedH_N.setObjectName("EqaulizedH_N")
+        self.ZoomFactor_2 = QtWidgets.QLineEdit(self.tab_4)
+        self.ZoomFactor_2.setGeometry(QtCore.QRect(680, 460, 271, 41))
+        self.ZoomFactor_2.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.ZoomFactor_2.setObjectName("ZoomFactor_2")
+        self.ZoomFactor_4 = QtWidgets.QLineEdit(self.tab_4)
+        self.ZoomFactor_4.setGeometry(QtCore.QRect(190, 470, 151, 31))
+        self.ZoomFactor_4.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.ZoomFactor_4.setObjectName("ZoomFactor_4")
+        self.ZoomFactor_5 = QtWidgets.QLineEdit(self.tab_4)
+        self.ZoomFactor_5.setGeometry(QtCore.QRect(430, 0, 201, 31))
+        self.ZoomFactor_5.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.ZoomFactor_5.setObjectName("ZoomFactor_5")
+        self.tabWidget.addTab(self.tab_4, "")
+        self.tab_5 = QtWidgets.QWidget()
+        self.tab_5.setObjectName("tab_5")
+        self.Magnitude = QtWidgets.QLabel(self.tab_5)
+        self.Magnitude.setGeometry(QtCore.QRect(20, 500, 531, 401))
+        self.Magnitude.setText("")
+        self.Magnitude.setObjectName("Magnitude")
+        self.Phase = QtWidgets.QLabel(self.tab_5)
+        self.Phase.setGeometry(QtCore.QRect(580, 500, 571, 401))
+        self.Phase.setText("")
+        self.Phase.setObjectName("Phase")
+        self.KernelSize_2 = QtWidgets.QLineEdit(self.tab_5)
+        self.KernelSize_2.setGeometry(QtCore.QRect(50, 450, 211, 41))
+        self.KernelSize_2.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.KernelSize_2.setObjectName("KernelSize_2")
+        self.KernelSize_3 = QtWidgets.QLineEdit(self.tab_5)
+        self.KernelSize_3.setGeometry(QtCore.QRect(940, 450, 171, 41))
+        self.KernelSize_3.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.KernelSize_3.setObjectName("KernelSize_3")
+        self.Image_FourierTab = QtWidgets.QLabel(self.tab_5)
+        self.Image_FourierTab.setGeometry(QtCore.QRect(300, 10, 551, 481))
+        self.Image_FourierTab.setText("")
+        self.Image_FourierTab.setAlignment(QtCore.Qt.AlignCenter)
+        self.Image_FourierTab.setObjectName("Image_FourierTab")
+        self.KernelSize_4 = QtWidgets.QLineEdit(self.tab_5)
+        self.KernelSize_4.setGeometry(QtCore.QRect(70, 80, 211, 41))
+        self.KernelSize_4.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.KernelSize_4.setObjectName("KernelSize_4")
+        self.tabWidget.addTab(self.tab_5, "")
+        self.tab_6 = QtWidgets.QWidget()
+        self.tab_6.setObjectName("tab_6")
+        self.ZoomFactor_13 = QtWidgets.QLineEdit(self.tab_6)
+        self.ZoomFactor_13.setGeometry(QtCore.QRect(110, 60, 251, 31))
+        self.ZoomFactor_13.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.ZoomFactor_13.setObjectName("ZoomFactor_13")
+        self.ZoomFactor_14 = QtWidgets.QLineEdit(self.tab_6)
+        self.ZoomFactor_14.setGeometry(QtCore.QRect(630, 60, 391, 31))
+        self.ZoomFactor_14.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.ZoomFactor_14.setObjectName("ZoomFactor_14")
+        self.Fourier_Filter_Image = QtWidgets.QLabel(self.tab_6)
+        self.Fourier_Filter_Image.setGeometry(QtCore.QRect(20, 100, 521, 471))
+        self.Fourier_Filter_Image.setText("")
+        self.Fourier_Filter_Image.setAlignment(QtCore.Qt.AlignCenter)
+        self.Fourier_Filter_Image.setObjectName("Fourier_Filter_Image")
+        self.Foruier_Spacila = QtWidgets.QLabel(self.tab_6)
+        self.Foruier_Spacila.setGeometry(QtCore.QRect(560, 100, 531, 471))
+        self.Foruier_Spacila.setText("")
+        self.Foruier_Spacila.setAlignment(QtCore.Qt.AlignCenter)
+        self.Foruier_Spacila.setObjectName("Foruier_Spacila")
+        self.tabWidget.addTab(self.tab_6, "")
+        self.tab_7 = QtWidgets.QWidget()
+        self.tab_7.setObjectName("tab_7")
+        self.Image_Noisy = QtWidgets.QLabel(self.tab_7)
+        self.Image_Noisy.setGeometry(QtCore.QRect(50, 40, 521, 451))
+        self.Image_Noisy.setText("")
+        self.Image_Noisy.setObjectName("Image_Noisy")
+        self.Image_Created = QtWidgets.QLabel(self.tab_7)
+        self.Image_Created.setGeometry(QtCore.QRect(590, 30, 521, 451))
+        self.Image_Created.setText("")
+        self.Image_Created.setObjectName("Image_Created")
+        self.ROI_Histogram = QtWidgets.QLabel(self.tab_7)
+        self.ROI_Histogram.setGeometry(QtCore.QRect(60, 510, 541, 371))
+        self.ROI_Histogram.setText("")
+        self.ROI_Histogram.setObjectName("ROI_Histogram")
+        self.Mean_Sigma = QtWidgets.QLabel(self.tab_7)
+        self.Mean_Sigma.setGeometry(QtCore.QRect(640, 710, 181, 81))
+        self.Mean_Sigma.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";")
+        self.Mean_Sigma.setText("")
+        self.Mean_Sigma.setObjectName("Mean_Sigma")
+        self.label = QtWidgets.QLabel(self.tab_7)
+        self.label.setGeometry(QtCore.QRect(210, 10, 141, 31))
+        self.label.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.tab_7)
+        self.label_2.setGeometry(QtCore.QRect(770, 0, 141, 31))
+        self.label_2.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.tab_7)
+        self.label_3.setGeometry(QtCore.QRect(240, 480, 141, 31))
+        self.label_3.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
+        self.label_3.setObjectName("label_3")
+        self.Gausian_Noise_BTN = QtWidgets.QPushButton(self.tab_7)
+        self.Gausian_Noise_BTN.setGeometry(QtCore.QRect(850, 500, 201, 41))
+        self.Gausian_Noise_BTN.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.Gausian_Noise_BTN.setObjectName("Gausian_Noise_BTN")
+        self.Uniform_Noise_BTN_2 = QtWidgets.QPushButton(self.tab_7)
+        self.Uniform_Noise_BTN_2.setGeometry(QtCore.QRect(850, 570, 201, 41))
+        self.Uniform_Noise_BTN_2.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.Uniform_Noise_BTN_2.setObjectName("Uniform_Noise_BTN_2")
+        self.Draw_Region_BTN = QtWidgets.QPushButton(self.tab_7)
+        self.Draw_Region_BTN.setGeometry(QtCore.QRect(630, 570, 201, 41))
+        self.Draw_Region_BTN.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.Draw_Region_BTN.setObjectName("Draw_Region_BTN")
+        self.Choose_Region_BTN = QtWidgets.QPushButton(self.tab_7)
+        self.Choose_Region_BTN.setGeometry(QtCore.QRect(630, 500, 201, 41))
+        self.Choose_Region_BTN.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.Choose_Region_BTN.setObjectName("Choose_Region_BTN")
+        self.Salt_Pepper_BTN = QtWidgets.QPushButton(self.tab_7)
+        self.Salt_Pepper_BTN.setGeometry(QtCore.QRect(850, 630, 201, 41))
+        self.Salt_Pepper_BTN.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 170, 255);")
+        self.Salt_Pepper_BTN.setObjectName("Salt_Pepper_BTN")
+        self.tabWidget.addTab(self.tab_7, "")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.tabWidget.setCurrentIndex(6)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.tabWidget.setToolTip(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.tabWidget.setWhatsThis(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.Browse.setText(_translate("MainWindow", "Browse Image"))
+        self.ZoomFactor.setText(_translate("MainWindow", "Click here and choose zoom factor"))
+        self.KNNBtn.setText(_translate("MainWindow", "KNN"))
+        self.BilinearBtn.setText(_translate("MainWindow", "Bilinear"))
+        self.EqualizeHBtn.setText(_translate("MainWindow", "EqaulizeH"))
+        self.ZoomFactor_6.setText(_translate("MainWindow", "Enhanced Image"))
+        self.ZoomFactor_7.setText(_translate("MainWindow", "Original Image"))
+        self.KernelSize.setText(_translate("MainWindow", "Enter Kernel Size"))
+        self.FactorValue.setText(_translate("MainWindow", "Enter Factor "))
+        self.Enhance_BTN.setText(_translate("MainWindow", "Enhance Image"))
+        self.Fourier.setText(_translate("MainWindow", "Fourier Trasnform"))
+        self.Fourier_FilterBTN.setText(_translate("MainWindow", "Fourier Filter"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "Tab1"))
+        self.GenerateBtn.setText(_translate("MainWindow", "Generate"))
+        self.ShowPixels.setText(_translate("MainWindow", "Show Pixels"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Tab 2"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Zoomed"))
+        self.ZoomFactor_2.setText(_translate("MainWindow", "Equalized\'s Normalization"))
+        self.ZoomFactor_4.setText(_translate("MainWindow", "Normalized H"))
+        self.ZoomFactor_5.setText(_translate("MainWindow", "Equalized Image"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("MainWindow", "Histogram"))
+        self.KernelSize_2.setText(_translate("MainWindow", "Magnitude of Image"))
+        self.KernelSize_3.setText(_translate("MainWindow", "Phase of Image"))
+        self.KernelSize_4.setText(_translate("MainWindow", "Original Image"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MainWindow", "Fourier"))
+        self.ZoomFactor_13.setText(_translate("MainWindow", "Forueir Domain Filter"))
+        self.ZoomFactor_14.setText(_translate("MainWindow", "Subtraction of S and F domain Filters"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_6), _translate("MainWindow", "FilterFourier"))
+        self.label.setText(_translate("MainWindow", "Noisy Image"))
+        self.label_2.setText(_translate("MainWindow", "Image Created"))
+        self.label_3.setText(_translate("MainWindow", "ROI Histogram"))
+        self.Gausian_Noise_BTN.setText(_translate("MainWindow", "Gausian Noise"))
+        self.Uniform_Noise_BTN_2.setText(_translate("MainWindow", "Uniform Noise"))
+        self.Draw_Region_BTN.setText(_translate("MainWindow", "Draw Region"))
+        self.Choose_Region_BTN.setText(_translate("MainWindow", "Choose Region"))
+        self.Salt_Pepper_BTN.setText(_translate("MainWindow", "Salt and Pepper"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), _translate("MainWindow", "Noise"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
